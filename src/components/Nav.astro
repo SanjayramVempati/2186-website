@@ -1,0 +1,96 @@
+---
+//Image imports
+import roboLogo from "../images/icons/roboLogo.png";
+import smallLogo from "../images/icons/smallLogo.png";
+import you from "../images/icons/you.png";
+import insta from "../images/icons/insta.png";
+import first from "../images/icons/first.png";
+import home from "../images/icons/home.png";
+---
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 bg-fixed sticky">
+  <div
+    class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5"
+  >
+    <a href="/" class="flex items-center">
+      <img
+        src={roboLogo}
+        class="h-16 mr-3 hover:img transform transition duration-200 hover:scale-110"
+        alt="Logo"
+      />
+    </a>
+    <!-- Text -->
+    <h2 class="text-white text-3xl font-roboto-slab max-md:hidden">
+      Westfield Robotics
+    </h2>
+    <!-- Icons -->
+    <div class="flex items-center space-x-4">
+      <!-- Youtube -->
+      <a href="https://youtube.com" target="_blank">
+        <img
+          src={you}
+          alt="Youtube"
+          class="h-10 hover:img transform transition duration-200 hover:scale-110"
+        />
+      </a>
+      <!-- Instagram -->
+      <a href="https://instagram.com" class="mr-10" target="_blank">
+        <img
+          src={insta}
+          alt="Insta"
+          class="h-10 hover:img transform transition duration-200 hover:scale-110"
+        />
+      </a>
+      <a
+        href="https://frc-events.firstinspires.org/2022/team/2186"
+        target="_blank"
+      >
+        <img
+          src={first}
+          alt="Insta"
+          class="h-10 hover:img transform transition duration-200 hover:scale-110"
+        />
+      </a>
+    </div>
+  </div>
+</nav>
+
+<nav class="bg-gray-50 dark:bg-gray-700 sticky top-0 z-50">
+  <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+    <div class="flex items-center">
+      <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
+        <li>
+          <a href="/">
+            <img
+              src={home}
+              class="h-5 duration-200 hover:scale-110"
+              alt="Logo"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-gray-900 dark:text-white hover:underline"
+            aria-current="page">About</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-gray-900 dark:text-white hover:underline"
+            >Sponsors</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-gray-900 dark:text-white hover:underline"
+            >Team</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-gray-900 dark:text-white hover:underline"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
