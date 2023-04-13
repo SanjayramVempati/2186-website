@@ -19,19 +19,25 @@ import team from "../images/content/team.jpg";
   
   <!-- <img src={team}  alt="" class="w-full  h-1/2 max-sm:h-1/2 object-cover  absolute bg-fixed brightness-50   ">  -->
 
+  <!-- Image + text -->
   <body class="p-10 ">
     <div class="relative">
-        <img src={team} class="w-full h-96 object-cover brightness-[0.6]" />
+      <!-- Image -->
+        <img src={team} class="w-full h-[22em] max-sm:h-[28em] object-cover brightness-[0.55] " />
+
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
-          <h1 class="text-4xl  font-extrabold text-white  text-center ">Our Team</h1>
+          <!-- Header -->
+          <h1 class="text-4xl  font-extrabold text-white  text-center ">Westfield Robotics</h1>
+
+          <!-- Text -->
     
-    <p class="text-2xl ml-20 mt-5 mr-10 font-roboto-slab text-white text-center p ">
-       Our team consists of very diverse members, with a warm and inclusive communiy. We strive to inspire our membbers to do their best and nurture their passion for STEM. We compete in FIRST robotics competitions.
+    <p class="text-2xl ml-20 mt-5 mr-10 font-roboto-slab text-white text-center w-[44em] max-lg:w-[28em] max-sm:w-[20em] ">
+       We are westfield Robotics. A passionate team orignially created to compete in FRC competitions. We strive to nurture our member's passion for STEM. 
     </p>
+    <!-- Buttons -->
      <div class="flex justify-center space-x-10 mt-10">
        <button class=" text-2xl font-bold  rounded-sm  text-white outline-orange-400 outline px-3 py-1 hover:bg-orange-400 hover:outline-white hover:text-white transition duration-400">About Us</button>
         </div>
-      
     </div>
 </body>
   
@@ -42,8 +48,12 @@ import team from "../images/content/team.jpg";
 </div>
 
 
-<h1>Hello</h1>
-  
+<!-- Second row -->
+<div class="bg-stone-600">
+  <h1>Our Robot</h1>
   <img src={roshan} alt="roshan" class="h-20">
+
+</div>
+  
 
 </Layout>

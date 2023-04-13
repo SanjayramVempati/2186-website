@@ -1,4 +1,9 @@
 ---
+
+//Component Imports
+import NavLink from "./NavLink.astro";
+
+
 //Image imports
 import roboLogo from "../images/icons/roboLogo.png";
 import smallLogo from "../images/icons/smallLogo.png";
@@ -6,6 +11,8 @@ import you from "../images/icons/you.png";
 import insta from "../images/icons/insta.png";
 import first from "../images/icons/first.png";
 import home from "../images/icons/home.png";
+
+
 ---
 
 <nav class=" border-gray-200 bg-stone-900 bg-fixed sticky">
@@ -59,7 +66,8 @@ import home from "../images/icons/home.png";
   <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
     <div class="flex items-center">
       <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
-        <li>
+      <!-- Home  -->
+        
           <a href="/">
             <img
               src={home}
@@ -67,29 +75,16 @@ import home from "../images/icons/home.png";
               alt="Logo"
             />
           </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="text-gray-900 dark:text-white hover:underline"
-            aria-current="page">About</a  
-          >
-        </li>
-        <li>
-          <a href="#" class="text-gray-900 dark:text-white hover:underline"
-            >Sponsors</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-gray-900 dark:text-white hover:underline"
-            >Team</a
-          >
-        </li>
-        <li>
-          <a href="/contact" class="text-gray-900 dark:text-white hover:underline"
-            >Contact</a
-          >
-        </li>
+        
+<!-- Page links -->
+       <NavLink link="/comps">Competitions</NavLink>
+       <NavLink link="/robots">Robots</NavLink>
+       <NavLink link="/team">Team</NavLink>
+       <NavLink link="/sponsor">Sponsor</NavLink>
+       <NavLink link="/contact">Contact</NavLink>
+        
+       
+        
       </ul>
     </div>
   </div>
