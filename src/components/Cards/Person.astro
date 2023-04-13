@@ -1,0 +1,20 @@
+---
+var {title, label} = Astro.props;
+---
+
+<div class="bg-orange-500 rounded-md">
+    <!-- Heading -->
+    <h1 class="ml-6 text-black text-2xl pt-6"> {title}</h1>
+
+    <!-- Label -->
+    <button class="ml-6 font-bold mb-2 text-gray-700 text-lg  px-4 border-2 rounded-md border-blue-600 ">
+        {label}
+    </button>
+    <!-- text -->
+
+    <p class="ml-6 text-gray-700 text-lg pb-6 mr-6">
+        <slot></slot>
+    </p>
+
+
+</div>
