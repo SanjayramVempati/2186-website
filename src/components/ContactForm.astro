@@ -3,44 +3,81 @@
 ---
 
 
-<section class=" bg-gray-900">
-    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center  text-white">Contact Us</h2>
-        <p class="mb-8 lg:mb-16 font-light text-center  text-gray-400 sm:text-xl">Contact the  Team for any information, requests, or if you want to sponsor us. (Please give us money)</p>
-        
-        <form action="https://formsubmit.co/sanjayram.vempati@gmail.com" method="POST"  class="space-y-8">
-            <!-- Honeypot -->
-            <input type="text" name="_honey" style="display:none;">
+<section class=" bg-stone-900">
 
-            <!-- Disable capcha -->
-            <input type="hidden" name="_captcha" value="false">
+
+
+<!-- Row of sections -->
+    <section class="flex flex-row">
+
+        <!-- Form -->
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center  text-white">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center  text-gray-400 sm:text-xl">Contact the  Team for any information, requests, or if you want to sponsor us. (Please give us money)</p>
             
-            <!-- <input type="hidden" name="_next" value="http://localhost:3000/success" > -->
-
-
-           <!-- Name -->
-           <div>
-               <label for="name" class="block mb-2 text-sm font-medium  text-gray-300">Your Name/Organization</label>
-               <input type="name" id="name" name="name" class="shadow-sm bg-gray-700 border  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-gray border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="First Last" required>
-            </div>
+            <form action="https://formsubmit.co/sanjayram.vempati@gmail.com" method="POST"  class="space-y-8">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display:none;">
+    
+                <!-- Disable capcha -->
+                <input type="hidden" name="_captcha" value="false">
+                
+                <!-- <input type="hidden" name="_next" value="http://localhost:3000/success" > -->
+    
+    
+               <!-- Name -->
+               <div>
+                   <label for="name" class="block mb-2 text-sm font-medium  text-gray-300">Your Name/Organization</label>
+                   <input type="name" id="name" name="name" class="shadow-sm bg-gray-700 border  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-gray border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="First Last" required>
+                </div>
+                
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium  text-gray-300">Your email</label>
+                    <input type="email" id="email" name="email" class="shadow-sm bg-gray-700 border  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-gray border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="email@provider.com" required>
+                </div>
+                <!-- Subject -->
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Subject</label>
+                    <input type="text" id="subject" name="subject" class="block p-3 w-full text-sm   rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="Title of your message" required>
+                </div>
+                <!-- Text -->
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium  text-gray-400">Your message</label>
+                    <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm  rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500" placeholder="Write your full message here"></textarea>
+                </div>
             
-            <!-- Email -->
-            <div>
-                <label for="email" class="block mb-2 text-sm font-medium  text-gray-300">Your email</label>
-                <input type="email" id="email" name="email" class="shadow-sm bg-gray-700 border  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5  bg-gray border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="email@provider.com" required>
-            </div>
-            <!-- Subject -->
-            <div>
-                <label for="subject" class="block mb-2 text-sm font-medium text-gray-300">Subject</label>
-                <input type="text" id="subject" name="subject" class="block p-3 w-full text-sm   rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light" placeholder="Title of your message" required>
-            </div>
-            <!-- Text -->
-            <div class="sm:col-span-2">
-                <label for="message" class="block mb-2 text-sm font-medium  text-gray-400">Your message</label>
-                <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm  rounded-lg shadow-sm border  focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500" placeholder="Write your full message here"></textarea>
-            </div>
-        
-            <button type="submit" class="py-3 px-5 text-sm bg-blue-900 font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">Send message</button>
-        </form>
-    </div>
+                <button type="submit" class="py-3 px-5 text-sm bg-blue-900 font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800">Send message</button>
+            </form>
+        </div>
+
+<!-- Second collum -->
+        <div class="pr-20 pt-20">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.6854994992004!2d-77.46645658759014!3d38.88543677160872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b644041126f511%3A0x1867ee6fe8989a02!2sWestfield%20High%20School!5e0!3m2!1sen!2sus!4v1682033576008!5m2!1sen!2sus"
+             width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+           
+                <div class="flex flex-row mt-10 space-x-10">
+                    <h1 class="text-center font-bold text-2xl  text-blue-300">Contact us at: </h1>
+                    <div>
+                        <p class=" text-orange-500 text-center text-xl"><span class="font-bold text-white">Number:</span> <a href="Tel: 999-999-9999">999-999-9999</a></p>
+                        <p class=" text-orange-500 text-center text-xl"><span class="font-bold text-white">Email:</span> <a href="mailto: 2186@gmail.com"">2186@gmail.com</a></p>
+
+
+                    </div>
+
+
+                </div>
+            
+           
+
+        </div>
+    </section>
+
+  
+
+
+    
   </section>
+

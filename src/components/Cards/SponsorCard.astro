@@ -1,0 +1,35 @@
+---
+var {image, title} = Astro.props;
+---
+
+<!-- Make a card for sponsors use a slot for text -->
+<div class=" w-[26em] rounded-2xl">
+
+    <!-- Inside -->
+    <div class="ml-5 pt-5 pb-2">
+
+
+        <!-- Image -->
+        <img src={image} alt={title} class="rounded-3xl w-[10em]" />
+
+
+        <!-- Header -->
+        <h1 class="font-bold text-3xl text-orange-100">{title}</h1>
+
+    <!-- Button -->
+<slot name="button"> </slot>    
+        <!-- Paragraph with text -->
+        <p class="text-lg font-medium font-mono text-orange-400">
+    
+            <slot></slot>
+        </p>
+
+
+
+    </div>
+
+
+
+
+
+</div>

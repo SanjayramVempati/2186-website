@@ -1,0 +1,109 @@
+---
+
+// Component imports
+import Layout from "../layouts/layout.astro";
+
+import SponsorCard from "../components/Cards/SponsorCard.astro";
+// Image imports
+import roshan from "../images/content/roshan.png";
+import team from "../images/content/team.jpg";
+
+---
+
+<Layout>
+    
+
+<!-- Make a sponsorship option cards. Silver, Gold, and Platinum. Platinum is in the middle and taller than the other ones. There should be bullet points underneath the cards -->
+
+<!-- Heading -->
+<h1 class="text-5xl font-bold  text-center mt-10 mb-10 text-blue-400">Available Tiers</h1>
+
+<!-- Sponsors -->
+<div class="flex flex-row justify-center mt-10">
+    <div class="bg-orange-500 h-60 w-48 mt-20"></div>
+    
+    <div class="bg-black outline-orange-400 h-80 w-60">]
+        <h1 class="text-2xl font-bold  text-center  mb-2 text-orange-700">Platinum</h1>
+        <h1 class="text-xl font-bold  text-center  mb-10 text-orange-500">Donation of $1500 +</h1>
+        <ul class="text-white text-center text-xl ">
+            <li>Logo on website</li>
+            <li>Logo on all social media</li>
+        </ul>
+
+    </div>
+
+    <div class="bg-gray-500 h-60 w-48 mt-20"></div>
+
+
+</div>
+
+
+
+
+
+    <!-- Current Sponsors -->
+<section>
+
+
+    <h1 class="text-5xl font-bold  text-center mt-20 mb-20 text-blue-400">Sponsors</h1>
+    <!-- Sponsor cards -->
+        <div class="grid grid-cols-3 gap-x-10 max-xl:grid-cols-2 max-md:grid-cols-1">
+    
+    <!-- Nasa Gold -->
+    <SponsorCard title="Nasa", image={roshan}>
+        <button slot="button" class="bg-orange-400 text-white font-bold py-1 px-2 rounded-sm mt-2 mb-2 border-2">Gold</button>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi.
+    </SponsorCard>
+    
+    
+    <!-- Something silver -->
+            <SponsorCard title="Nasa", image={roshan}>
+                <button slot="button" class="bg-gray-400 text-white font-bold py-1 px-2 rounded-sm mt-2 mb-2 border-2">Silver</button>
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi.
+            </SponsorCard>
+    
+    
+            <SponsorCard title="Nasa", image={roshan}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi.
+            </SponsorCard>
+            <SponsorCard title="Nasa", image={roshan}>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi.
+            </SponsorCard>
+    
+    
+    
+    
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+   
+
+
+
+
+    
+
+
+
+
+
+</Layout>
